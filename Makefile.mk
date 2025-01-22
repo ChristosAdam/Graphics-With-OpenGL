@@ -7,16 +7,16 @@ LDFLAGS = -L/usr/X11R6/lib -L/sw/lib -L/usr/sww/lib \
 		-L/usr/sww/bin -L/usr/sww/pkg/Mesa/lib -lGLEW -lglut -lGLU -lGL -lX11 -lm
 
 RM = /bin/rm -f
-all: askisi2 askisi4
-askisi2: askisi2.o 
-	$(CC) $(CFLAGS) -o askisi2 askisi2.o $(INCFLAGS) $(LDFLAGS)
-askisi2.o: askisi2.c 
-	$(CC) $(CFLAGS) $(INCFLAGS) -c askisi2.c 
-askisi4: askisi4.o 
-	$(CC) $(CFLAGS) -o askisi4 askisi4.o $(INCFLAGS) $(LDFLAGS)
-askisi4.o: askisi4.c 
-	$(CC) $(CFLAGS) $(INCFLAGS) -c askisi4.c
+all: draw_line_ellipse create_fill_polygon
+draw_line_ellipse:  draw_line_ellipse.o 
+	$(CC) $(CFLAGS) -o  draw_line_ellipse  draw_line_ellipse.o $(INCFLAGS) $(LDFLAGS)
+draw_line_ellipse.o:  draw_line_ellipse.c 
+	$(CC) $(CFLAGS) $(INCFLAGS) -c  draw_line_ellipse.c 
+create_fill_polygon: create_fill_polygon.o 
+	$(CC) $(CFLAGS) -o create_fill_polygon create_fill_polygon.o $(INCFLAGS) $(LDFLAGS)
+create_fill_polygon.o: create_fill_polygon.c 
+	$(CC) $(CFLAGS) $(INCFLAGS) -c create_fill_polygon.c
 clean: 
-	$(RM) *.o askisi2 askisi4
+	$(RM) *.o  draw_line_ellipse create_fill_polygon
  
 
