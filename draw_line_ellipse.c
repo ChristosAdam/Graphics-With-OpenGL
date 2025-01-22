@@ -1,6 +1,6 @@
 /*********************************
  * Ergasia 1 – Askhsh 2 – 18/01/2022
- * Adamakis Christos -2148
+ * Adamakis Christos 
  *********************************/
 
 #include <GL/glut.h>
