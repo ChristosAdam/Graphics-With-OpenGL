@@ -19,3 +19,13 @@ In create fill polygon:
   - Second, the polygon created by the lines are filled with color.
   - User has the option to clear the window.
    
+In polygon_cut:
+  - The program performs the "selection" of a specific area of a polygon, using a rectangle for selection with the help of Sutherland-Hodgman algorithm.
+  - A grey window is created.
+  - Right click to choose number of edges in polygon.
+  - Right click to choose color.
+  - Right click to fill the polygon with color.
+  - Press "f" to create a rectangle.
+  - Press "c" to create the intersection between the rectangle and the polygon.
+  - Press "space" to show the polygon that was created from the intersection of the original polygon and the rectangle.
+  - Right click to select clear screen to obtain the original window.
